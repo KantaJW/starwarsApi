@@ -1,0 +1,138 @@
+/*────────────────── 
+  allt text i webbsidan
+──────────────────*/
+*{
+    text-align:center;
+  
+}
+
+/*────────────────── 
+  background image
+──────────────────*/
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .background-image {
+	background-image: url("images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-attachment: fixed;
+  
+  }
+/*────────────────── 
+  font hantera
+──────────────────*/
+h1 {
+  padding: 1em;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+ 
+h2, h3, h4 {
+  padding: 1em;
+  font-size: large;
+  font-weight: bold;
+}
+
+/*──────────────────
+   Navbar
+
+ ──────────────────*/
+ .nav {
+  background-color: rgba(24, 18, 18, 0.945);
+ }
+
+ .nav li a {
+	color:rgb(243, 235, 235);
+	text-decoration: none;
+  font: size 1.5em;
+  }
+  
+  .nav li a:hover  {
+	color: rgb(214, 106, 43);
+  }
+
+  .active {
+    background-color: rgb(117, 11, 11);
+  }
+  
+/*──────────────────
+   Logo 
+
+ ──────────────────*/
+  .logo > img {
+    max-width: 30%;
+    height: auto;
+    cursor: pointer;
+  }
+
+
+  #searchtext{
+    margin-bottom:0.7em;
+  }
+
+  #search-result{
+    cursor: pointer;
+  }
+
+/*──────────────────
+  table responsive
+──────────────────*/
+table, p {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr:nth-child(odd) {
+  background-color: #dfdfdf9a;
+}
+
+td, th, tr {
+  border: 0.063rem solid #7a7979;
+  text-align: center;
+  padding: 0.9375em;
+}
+
+td {
+  font-size: 0.8rem;    
+}
+
+/*──────────────────
+   Media queri
+ ──────────────────*/
+  @media screen and (max-width: 600px) {
+    h1, h2, h3 {
+      font-size: 1rem;
+    }
+
+    td, th, tr {
+      padding: 0.125rem;
+    }
+  }
+
+  /*──────────────────
+   Master Yoda img
+  ──────────────────*/
+  .yodaimg > img {
+    max-width: 13%;
+    height: auto;
+    cursor: pointer;
+  }
+
+/*──────────────────
+     Footer
+──────────────────*/
+   footer {
+    margin-top: 3em;
+    padding: 1em;
+    background-color: #0b0c0c;
+    color: rgb(17, 16, 16);
+}
+p {
+  color: white;
+}

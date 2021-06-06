@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Star Wars Lover</title>
+<!--länk till bootstrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<!--länk till css-->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- background img -->
+<div class="background-image">
+
+<!--logo-->
+<div class="logo">
+<img src="images/logo.png" alt="starwars logo">
+</div>
+
+<!--Navigator navbar-->
+<nav role="navigation" aria-label="main-menu">
+<ul class="nav justify-content-center">
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="contact.html">Contact our master</a>
+</li>
+</ul>
+</nav>
+
+<!--contact form-->
+<form id="form">
+<h1>Contact our master Yoda here!</h1>
+<div class="yodaimg">
+    <img src="images/yoda.png" alt="masteryoda image">
+</div>
+
+<div>
+<label for="name"><p>Name</p></label></br>
+<input id="name" name="name">
+</div>
+  
+<div>
+<label for="email"><p>Email</p></label><br>
+<input type="email" id="email" name="email">
+</div>
+  
+<div>
+<label for="message"><p>Message</p></label><br>
+<textarea id="message" name="message"></textarea>
+</div>
+<div id="buttons-row">
+<div class="buttons">
+<button type="submit" id="send">Send message</button>
+</div>
+  
+<div class="buttons">
+<button id="reset">Reset</button>
+</div>
+</div>
+
+<!--footet-->
+<footer>
+<p>Star Wars Lover<br>
+<p>Copyright@StarWarsLover.2021</p>
+</footer>
+
+</div>
+</body>
+
+</html>

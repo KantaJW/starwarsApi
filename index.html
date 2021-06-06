@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Star Wars Lover</title>
+  <!--länk till font style-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--länk till Bootstrap-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+   integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!--länk till css-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- background img -->
+<div class="background-image">
+
+<!--logo-->
+<div class="logo">
+<img src="images/logo.png" alt="starwars logo">
+</div>
+
+<!--Navigator navbar-->
+<nav role="navigation" aria-label="main-menu">
+<ul class="nav justify-content-center">
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact our master</a>
+</li>
+</ul>
+</nav>
+
+<!--Innehållet text content-->
+<div role="main-content">
+<h1>Along time ago in a galaxy far, far away...</h1>
+<h2>We have created a website about Starwars for Starwars fans.
+<h3>Welcome to the Star Wars lover website, here You can find everything 
+    about Star Wars.</h3> 
+<h4>Search for Star Wars films here!</h4>
+<div class="d-flex">
+<hr class="my-auto flex-grow-1">
+<div id="searchtext" class="px-4">
+  <p>May the search be with You!</p></div>
+<hr class="my-auto flex-grow-1">
+</div>
+
+<!--Search rutan och button-->
+<div>
+  <input type="text" id="input-search"> 
+  <label for="input-search"><p>Text here</p></label>
+  <input type="button" id="button-search" value="Search" aria-label="Search"></button>
+</div>
+
+
+<!--Innehållet data det ska hämta från Api och visa upp efter search-->
+<div role="search-result" id="search-result"></div>
+<template id="template-starwars">
+<div class="starwars-films"></div>
+<div class="starwars-people"></div>
+<div class="starwars-planets"></div>
+<div class="starwars-species"></div>
+<div class="starwars-vehicles"></div>
+<div class="starwars-starships"></div>
+<div class="starwars-characters"></div>
+<div class="starwars-release_date"></div>
+<div class="starwars-producer"></div>
+<div class="starwars-director"></div>
+<div class="starwars-opening_crawl"></div>
+<div class="starwars-episode_id"></div>
+<div class="starwars-title"></div>
+</template>
+  
+<!--footer-->
+<footer>
+<p>Star Wars Lover<br>
+<p>Copyright@StarWarsLover.2021</p>
+</hr>
+</footer>
+
+<!--Länkar till Javascript file-->
+<script src="script/index.js"></script>
+
+</div>
+</body>
+</html>
+
